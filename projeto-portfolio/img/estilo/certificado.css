@@ -38,7 +38,6 @@ header > #menu {
 }
 
 
-
 header > menu > ul {
     display: block;
     list-style: none;
@@ -63,100 +62,74 @@ header > menu > ul > li > a:hover {
     border-bottom: solid 3px white;
 }
 
+body {
+    background-color: #0b2535;
+}
+
 main {
     padding: 50px 0px;
-    background-color: #042940;
+    background-color: #0b2535;
+    min-height: 100vh;
     width: 100%;
     height: 100vh;
 }
 
-main > article {
-    display: block;
+main > h1 {
+    color: #DBF227;
     text-align: center;
+    margin: 10px;
+    font-size: 2.7em;
+    font-weight: bold;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.432);
+    transition: 1S;
+    cursor: pointer;
 }
 
-main > article > #p1 {
-    font-size: 1.5em;
+main > h1:hover {
+    text-shadow: -7px -7px 7px rgba(0, 0, 0, 0.432);
+    transition: 1S;
+}
+
+main > h2 {
     color: white;
-}
-
-main > article > #p2 {
+    text-align: center;
+    margin-bottom: 10px;
     font-size: 2em;
-    font-weight: bold;
-    color: white;
 }
 
-main > article > #pname {
- font-size: 3em;
- font-weight: bolder;
- color: #DBF227;
-}
-
-main > article > #pname,#p2 {
-    display: inline-flex;
-}
-
-main > #artic2 {
+.galeria {
     display: block;
-    text-align: center;
-    
-}
-
-main > #artic2 > #p3 {
-    color: white;
-    font-size: 1.3em;
-    border-bottom: solid 3px #DBF227 ;
-}
-
-main > #artic2 > #p4 {
-    color: white;
-    font-size: 1.7em;
-    font-weight: bold;
-    color: #DBF227
-}
-
-main > #artic2 > #p4,#p3 {
-    display: inline-flex;
-}
-
-main > #artic2 > #p5 {
-    color: white;
-    font-size: 1.2em;
-    text-align: justify;
-    padding-top: 20px;
-    width: 400px;
     margin: auto;
-    
 }
 
-main > #iimg {
-    display: flex;
+.bloco {
+    display: block;
+    margin: auto;
+    text-align: center;
+    width: 400px;
     justify-content: center;
     align-items: center;
 }
 
-main > #iimg > #img {
-    padding: 40px 0px;
-    height: 300px;
-    width: 310px;
-    float: left;
-    margin: 10px;
-    animation: floatAnimation 2s ease-in-out infinite;
+.bloco:hover > :not(:hover) {
+    opacity: .4;
+    filter: blur(2px);
+    transform: scale(0.9);
 }
 
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-18px);
-    }
+.imgs:hover {
+    width: 400px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
 }
 
+.imgs {
+
+    width: 300px;
+}
 
 
 footer {
+    margin-top: 200px;
     background-color: #D6D58E;
     position: absolute;
     bottom: -5;

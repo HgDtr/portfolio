@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 </head>
 <body>
     <header>
         <nav>
-l
+            <i id="icon" class="material-icons" onclick="clickMenu()">menu</i>
         </nav>
-        <menu>
+        <menu id="menu">
             <ul>
-                <li>Inicio</li>
-                <li>Sobre mim</li>
-                <li>Skills</li>
-                <li>Projetos</li>
-                <li>Certificados</li>
+                <li><a href="index.html" target="_self" rel="next">Inicio</a></li>
+                <li><a href="sobremim.html">Sobre mim</a></li>
+                <li><a href="skills.html" target="_self" rel="next">Skills</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
             </ul>
         </menu>
+    </header>
         <main>
             <article>
-                <p id="p1">Bem vindo(a)</p>
+                <p id="p1">Olá! Prazer,</p>
                 <p id="p2">sou</p>
-                <p id="pname">Hugo Dutra!</p>
+                <p id="pname">Hugo Dutra.</p>
             </article>
 
-            <div id="iimg"><img id="img" src="img-flutuante.png" alt="img"></div>
+            <div id="iimg"><img id="img" src="icons/img-flutuante.png" alt="img"></div>
 
             <article id="artic2">
                 <p id="p3">Desenvolvedor</p>
@@ -36,9 +38,19 @@ l
             </article>
         </main>
         <footer>
-l
+            <div id="txt">
+                <p>@hgdtr.dev</p>
+            </div>
+            <div id="cont">
+                <img class="infoimg" src="icons/facebook.png" alt="face">
+                <img class="infoimg" src="icons/instagram.png" alt="insta">
+                <img class="infoimg" src="icons/whatsapp.png" alt="wpps">
+                <img class="infoimg" src="icons/github.png" alt="git">
+                <img class="infoimg" src="icons/linkedin.png" alt="link">
+            </div>
         </footer>
-    </header>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

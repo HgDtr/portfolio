@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: #042940;
     height: 100%;
 }
 
@@ -70,93 +71,72 @@ main {
     height: 100vh;
 }
 
-main > article {
-    display: block;
-    text-align: center;
-}
-
-main > article > #p1 {
-    font-size: 1.5em;
-    color: white;
-}
-
-main > article > #p2 {
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-}
-
-main > article > #pname {
- font-size: 3em;
- font-weight: bolder;
- color: #DBF227;
-}
-
-main > article > #pname,#p2 {
-    display: inline-flex;
-}
-
-main > #artic2 {
-    display: block;
-    text-align: center;
-    
-}
-
-main > #artic2 > #p3 {
-    color: white;
-    font-size: 1.3em;
-    border-bottom: solid 3px #DBF227 ;
-}
-
-main > #artic2 > #p4 {
-    color: white;
-    font-size: 1.7em;
-    font-weight: bold;
-    color: #DBF227
-}
-
-main > #artic2 > #p4,#p3 {
-    display: inline-flex;
-}
-
-main > #artic2 > #p5 {
-    color: white;
-    font-size: 1.2em;
-    text-align: justify;
-    padding-top: 20px;
-    width: 400px;
-    margin: auto;
-    
-}
-
-main > #iimg {
+main > .img {
     display: flex;
-    justify-content: center;
+    position: relative;
     align-items: center;
+    justify-content: center;
 }
 
-main > #iimg > #img {
-    padding: 40px 0px;
-    height: 300px;
-    width: 310px;
-    float: left;
-    margin: 10px;
-    animation: floatAnimation 2s ease-in-out infinite;
+main > .img > .avatar {
+    width: 300px;
+    
+    filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5)); 
 }
 
-@keyframes floatAnimation {
-    0%, 100% {
-        transform: translateY(0);
-    }
+main > .img > .skills {
+    display: flex;
+    position: absolute;
+    top: 85%;
+    border-radius: 40%;
+    align-items: center;
+    justify-content: center;
+    width: 90px; 
 
+}
+
+main > .img > #css {
+    animation: floatAnimation1 3s ease-in-out infinite;
+}
+
+@keyframes floatAnimation1 {
     50% {
-        transform: translateY(-18px);
+        transform: translateX(200px);
+    }
+
+    50%{
+        transform: translateX(-100px);
     }
 }
 
+main > .img > #html {
+    animation: floatAnimation2 3s ease-in-out infinite;
 
+}
+
+@keyframes floatAnimation2 {
+    50% {
+        transform: translateX(200px);
+    }
+
+    50%{
+        transform: translateX(100px);
+    }
+}
+
+main > #text {
+    color: white;
+    text-align: justify;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    text-indent: 20px;
+    padding-top: 60px;
+    font-size: 1.2em;
+}
 
 footer {
+    margin-top: 180px;
     background-color: #D6D58E;
     position: absolute;
     bottom: -5;

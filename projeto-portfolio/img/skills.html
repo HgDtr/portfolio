@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/skills.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <i id="icon" class="material-icons" onclick="clickMenu()">menu</i>
+        </nav>
+        <menu id="menu">
+            <ul>
+                <li><a href="index.html" target="_self" rel="next">Inicio</a></li>
+                <li><a href="sobremim.html">Sobre mim</a></li>
+                <li><a href="skills.html" target="_self" rel="next">Skills</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="certificados.html">Certificados</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <div id="txt1">
+            <p>Minhas</p>
+            <h1>Skills</h1>
+        </div>
+
+        <p id="p">Click em uma tecnologia</p>
+
+        <div id="ftg" onclick="clicar">
+            <div class="iim" id="img1">
+                <img id="b1" class="fotos" src="skills/ts.jpg" alt="" onclick="ts()">
+                <img id="b2" class="fotos" src="skills/react.jpg" alt="" onclick="react()">
+            </div>
+            <div class="iim" id="img2">
+                <img id="b3" class="fotos" src="skills/html.jpg" alt="" onclick="html()">
+                <img id="b4" class="fotos" src="skills/js.jpg" alt="" onclick="js()">
+                <img id="b5" class="fotos" src="skills/css.jpg" alt="" onclick="css()">
+            </div>
+            <div class="iim" id="img3">
+                <img id="b6" class="fotos" src="skills/sass.jpg" alt="" onclick="sass()">
+                <img id="b7" class="fotos" src="skills/node.jpg" alt="" onclick="node()">
+            </div>
+        </div>
+
+        <div id="txt2">
+        
+        </div>
+    </main>
+    <footer>
+        <div id="txt">
+            <p>@hgdtr.dev</p>
+        </div>
+        <div id="cont">
+            <img class="infoimg" src="icons/facebook.png" alt="face">
+            <img class="infoimg" src="icons/instagram.png" alt="insta">
+            <img class="infoimg" src="icons/whatsapp.png" alt="wpps">
+            <img class="infoimg" src="icons/github.png" alt="git">
+            <img class="infoimg" src="icons/linkedin.png" alt="link">
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
